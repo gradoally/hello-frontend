@@ -28,7 +28,7 @@ export default function Home() {
         userData ? (
           <>
             <h1 className="text-2xl text-white font-bold mb-4">User Data</h1>
-            <ul>
+            <ul className="text-white">
               <li>ID: {userData.id}</li>
               <li>First Name: {userData.first_name}</li>
               <li>Last Name: {userData.last_name}</li>
