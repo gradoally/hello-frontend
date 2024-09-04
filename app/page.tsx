@@ -118,7 +118,7 @@ export default function Home() {
                   twaReturnUrl: 'https://t.me/DemoDappWithTonConnectBot/demo'
               }} 
             > 
-            <TonConnectButton className="justify-self-center" />
+            <TonConnectButton className="max-w-md justify-self-center" />
             <h1 className="text-2xl text-white font-bold mb-4">User Data</h1>
             <ul className="text-white">
               <li>ID: {userData.id}</li>
