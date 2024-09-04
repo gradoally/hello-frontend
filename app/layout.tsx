@@ -17,7 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head><Script src="https://telegram.org/js/telegram-web-app.js" strategy="beforeInteractive" /></head>
+      <head>
+        <Script src="https://telegram.org/js/telegram-web-app.js" strategy="beforeInteractive" />
+        <Script src="https://unpkg.com/@tonconnect/sdk@latest/dist/tonconnect-sdk.min.js" defer />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );

@@ -2,6 +2,7 @@
 
 import WebApp from "@twa-dev/sdk";
 import { useEffect, useState } from "react";
+import {TonConnectButton} from "@tonconnect/ui-react";
 
 interface UserData {
   id: number;
@@ -27,6 +28,7 @@ export default function Home() {
       {
         userData ? (
           <>
+            <TonConnectButton />
             <h1 className="text-2xl text-white font-bold mb-4">User Data</h1>
             <ul className="text-white">
               <li>ID: {userData.id}</li>
